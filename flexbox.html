@@ -6,8 +6,6 @@
             display: flex;
         }
         .adi {
-            width: 100px;
-            height: 100px;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -16,13 +14,90 @@
             margin: 20px;
             background-color: deepskyblue;
             font-size: 20px;
+            height: 300px;
+            width: 200;
         }
     </style>
 </head>
 <body>
     <div id="aa">
-        <div class="adi"> Item 1</div>
-        <div class="adi"> Item 2</div>
+        <div class="adi product-card"></div>
+            <img class="product-img" src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Product">
+            <div class="product-info">
+            <h3>Product Name</h3>
+            <p>$19.99</p>
+            <div class="product-actions">
+                <button class="btn add">Add</button>
+                <button class="btn order">Order</button>
+            </div>
+            </div>
+        </div>
+        <style>
+            .product-card {
+            flex-direction: column;
+            align-items: center;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            }
+            .product-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+            }
+            .product-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            transition: box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            }
+            .product-info {
+            text-align: center;
+            }
+            .product-info h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.2em;
+            color: #222;
+            }
+            .product-info p {
+            margin: 0 0 12px 0;
+            color: #0099cc;
+            font-weight: bold;
+            }
+            .product-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            }
+            .btn {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 6px;
+            background: #0099cc;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+            }
+            .btn.order {
+            background: #ff9800;
+            }
+            .btn:hover {
+            background: #0077aa;
+            }
+            .btn.order:hover {
+            background: #e67c00;
+            }
+        </style>
+        <div class="adi"></div>
+            <img src="https://tse3.mm.bing.net/th/id/OIP.uojr_CXL0eKEvV7JGFcJZAHaEo?pid=Api&P=0&h=180" alt="">
+            <button>Add</button>
+            <button>Order</button>
+        </div>
         <div class="adi"> Item 3</div>
     </div>
 </body>
