@@ -69,6 +69,8 @@
         </div>
     </div>
     <script>
+        // student data
+
         const students = [
             { name: "Akash", class: "Btech", branch: "it", rollno: 166 },
             { name: "Ravi", class: "Btech", branch: "it", rollno: 167 },
@@ -90,9 +92,9 @@
                 <span><strong>Roll No:</strong> ${student.rollno}</span>
             `;
             if (student.branch === 'it') {
-                itCard.appendChild(div);
+                itCard.appendChild(div); // append to IT card
             } else {
-                otherCard.appendChild(div);
+                otherCard.appendChild(div);// append to Other branches card
             }
         });
     </script>
