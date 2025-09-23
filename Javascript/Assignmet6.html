@@ -57,15 +57,30 @@
         .branch-other {
             border-left: 6px solid #f3053c;
         }
+        button {
+            margin-top: 12px;
+            padding: 8px 16px;
+            background: #4f8cff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(79,140,255,0.12);
+            transition: background 0.2s, transform 0.2s;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="card" id="itCard">
             <div class="card-title">IT Branch Students</div>
+            <button>Show</button>
         </div>
         <div class="card" id="otherCard">
             <div class="card-title">CSE & ECE Branch Students</div>
+            <button> Show</button>
         </div>
     </div>
     <script>
@@ -97,6 +112,28 @@
                 otherCard.appendChild(div);// append to Other branches card
             }
         });
+
+        // Toggle visibility and button text for IT card
+        const itBtn = itCard.querySelector('button');
+        itBtn.onclick = function() {
+            const students = itCard.querySelectorAll('.student');
+            const isVisible = students[0].style.display !== 'none';
+            students.forEach(s => {
+                s.style.display = isVisible ? 'none' : 'block';
+            });
+            itBtn.textContent = isVisible ? 'Show' : 'Hide';
+        };
+
+        // Toggle visibility and button text for Other card
+        const otherBtn = otherCard.querySelector('button');
+        otherBtn.onclick = function() {
+            const students = otherCard.querySelectorAll('.student');
+            const isVisible = students[0].style.display !== 'none';
+            students.forEach(s => {
+                s.style.display = isVisible ? 'none' : 'block';
+            });
+            otherBtn.textContent = isVisible ? 'Show' : 'Hide';
+        };
     </script>
 </body>
 </html>
