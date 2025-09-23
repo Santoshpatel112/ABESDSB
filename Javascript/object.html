@@ -8,6 +8,7 @@
 <body>
     
     <p id="adi"></p>
+    <p id="adi2"></p>
 </body>
 <script>
     const person={
@@ -17,5 +18,12 @@
         city:"patna"
     };
     document.getElementById("adi").innerHTML=person.firstname;
+    const person1=new Object({
+        firstname:"akash",
+        lastname:"kumar",
+        age:22,
+        city:"patna"
+    });
+    document.getElementById("adi2").innerHTML=person1.firstname;
 </script>
 </html>
