@@ -3,14 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Image Changer</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .container {
+            background: rgba(255,255,255,0.8);
+            padding: 32px 40px;
+            border-radius: 18px;
+            box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #myImg {
+            width: 220px;
+            height: 220px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            transition: box-shadow 0.3s, transform 0.3s;
+            margin-bottom: 24px;
+        }
+        #myImg:hover {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            transform: scale(1.04);
+        }
+        button {
+            padding: 12px 32px;
+            background: #4f8cff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(79,140,255,0.12);
+            transition: background 0.2s, transform 0.2s;
+        }
+        button:hover {
+            background: #2563eb;
+            transform: translateY(-2px) scale(1.03);
+        }
+    </style>
 </head>
 <body>
-    <img id="myImg" src="https://images.pexels.com/photos/33140582/pexels-photo-33140582/free-photo-of-tropical-palm-tree-against-clear-sky.jpeg?auto=compress&cs=tinysrgb&w=600&loading=lazy" 
-         alt="image" style="width:200px; height:200px; border-radius:10px;">
-    <br>
-    <button onclick="changeImage()">Change Image</button>
-
+    <div class="container">
+        <img id="myImg" src="https://images.pexels.com/photos/33140582/pexels-photo-33140582/free-photo-of-tropical-palm-tree-against-clear-sky.jpeg?auto=compress&cs=tinysrgb&w=600&loading=lazy" 
+             alt="image">
+        <button onclick="changeImage()">Change Image</button>
+    </div>
     <script>
         function changeImage() {
             document.getElementById("myImg").src = "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600";
