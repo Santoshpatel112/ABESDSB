@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .button{
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50%;
+            background-color: aqua;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+        .button:hover{
+            background-color: rgb(243 5 60);
+        }
+        #div1{
+            width: 300px;
+            height: 300px;
+            margin-left: 40%;
+            box-shadow: 10px 10px 5px rgb(123 119 119);
+            border-radius: 20px;
+        }
+        h1{
+            font-size: 60px;
+            margin: 0;
+        }
+        img{
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+        <div id="div1" style=" text-align: center; margin-top: 100px; border: 2px solid black; width: 200px; height: 200px; padding: 20px;">
+            <div style="display: flex;">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.ZqcguAIvaGtQCPe0W6QNdwHaHa?pid=Api&P=0&h=180" alt="logo" style="width: 40px ; height: 40px; margin-right: 10px; margin-top:10px   ">
+                <h2>Couter App</h2>
+            </div>
+            <h2 id="counter">0</h2>
+            <button onclick="increment()" class="button">+</button>
+            <button onclick="decrement()" class="button">-</button>
+
+        </div>
+
 </body>
+<script>
+    let count=0;
+    function increment(){
+        if(count<10){
+            count++;
+            document.getElementById("counter").innerText=count;
+        }else{
+
+            alert("count should not be greater than 10");
+        }
+    }
+    function decrement(){
+        if(count>0){
+            count--;
+            document.getElementById("counter").innerText=count;
+        }else{
+            alert("count should not be less than 0");
+        }
+    }
+</script>
 </html>
