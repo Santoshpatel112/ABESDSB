@@ -9,6 +9,7 @@ const Footer = () => {
         textAlign: "center",
       }}
     >
+        
       <div style={{ marginBottom: "1rem" }}>
         <p style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
           Wildlife Gallery
