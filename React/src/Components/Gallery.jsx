@@ -3,8 +3,8 @@ const Gallery = () => {
     { name: "Lion", image: "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=300" },
     { name: "Elephant", image: "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=300" },
     { name: "Tiger", image: "https://images.unsplash.com/photo-1551969014-7d2c4cddf0b6?w=300" },
+    {}
   ];
-
   return (
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "2rem", padding: "2rem" }}>
       {animals.map((animal, index) => (
