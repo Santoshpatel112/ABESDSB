@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Components/Card'
-export const App = () => {
+
+const App = () => {
   return (
     <>
     <Card />
@@ -8,3 +9,5 @@ export const App = () => {
     
   )
 }
+
+export default App
