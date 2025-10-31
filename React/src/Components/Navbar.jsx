@@ -6,8 +6,9 @@ const Navbar = () => {
         justifyContent: "space-between",
         alignItems: "center",
         padding: "1rem 2rem",
-        backgroundColor: "#333",
+        backgroundColor: "#2c3e50",
         color: "white",
+        boxShadow: "0 2px 10px rgba(0,0,0,0.3)",
       }}
     >
       <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
@@ -20,9 +21,10 @@ const Navbar = () => {
             borderRadius: "50%",
             objectFit: "cover",
             border: "2px solid white",
+            transition: "transform 0.3s ease",
           }}
         />
-        <span style={{ fontSize: "1.5rem", fontWeight: "bold" }}></span>
+        <span style={{ fontSize: "1.5rem", fontWeight: "bold" }}>Wildlife</span>
       </div>
       <ul
         style={{
@@ -33,25 +35,25 @@ const Navbar = () => {
         }}
       >
         <li>
-          <a href="#home" style={{ color: "white", textDecoration: "none" }}>
+          <a href="#home" style={{ color: "white", textDecoration: "none", transition: "color 0.3s" }}>
             Home
           </a>
         </li>
         <li>
-          <a href="#about" style={{ color: "white", textDecoration: "none" }}>
+          <a href="#about" style={{ color: "white", textDecoration: "none", transition: "color 0.3s" }}>
             About
           </a>
         </li>
         <li>
           <a
             href="#services"
-            style={{ color: "white", textDecoration: "none" }}
+            style={{ color: "white", textDecoration: "none", transition: "color 0.3s" }}
           >
-            Animal
+            Animals
           </a>
         </li>
         <li>
-          <a href="#contact" style={{ color: "white", textDecoration: "none" }}>
+          <a href="#contact" style={{ color: "white", textDecoration: "none", transition: "color 0.3s" }}>
             Contact
           </a>
         </li>
