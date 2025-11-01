@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Fetchdata = () => {
+  // Fetch posts from API
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -11,7 +12,7 @@ const Fetchdata = () => {
   }, []);
 
   return (
-    
+
     <div>
       <h2>Posts</h2>
       {posts.length > 0 ? (
