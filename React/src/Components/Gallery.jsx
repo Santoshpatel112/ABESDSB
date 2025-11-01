@@ -15,8 +15,9 @@ const Gallery = () => {
       image:
         "https://tse3.mm.bing.net/th/id/OIP.Wy0Aq8oS-tt-Xmv8lZ8RowHaE8?w=263&h=180&c=7&r=0&o=5&pid=1.7",
     },
+    
     {
-      
+
       name: "Monkey",
       image:
         "https://tse1.mm.bing.net/th/id/OIP.C0S2HJNlHADRFXwv9ZU76wHaHa?pid=Api&P=0&h=180",
