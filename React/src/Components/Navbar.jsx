@@ -44,6 +44,7 @@ const Navbar = () => {
             About
           </a>
         </li>
+        
         <li>
           <a href="#gallery" style={{ color: "white", textDecoration: "none", transition: "color 0.3s" }}>
             Gallery
