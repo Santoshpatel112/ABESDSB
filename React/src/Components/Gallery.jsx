@@ -1,4 +1,5 @@
 const Gallery = () => {
+  // Animal gallery data
   const animals = [
     {
       name: "Lion",
@@ -15,7 +16,7 @@ const Gallery = () => {
       image:
         "https://tse3.mm.bing.net/th/id/OIP.Wy0Aq8oS-tt-Xmv8lZ8RowHaE8?w=263&h=180&c=7&r=0&o=5&pid=1.7",
     },
-    
+
     {
 
       name: "Monkey",
