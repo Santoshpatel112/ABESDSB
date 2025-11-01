@@ -11,6 +11,7 @@ const Fetchdata = () => {
   }, []);
 
   return (
+    
     <div>
       <h2>Posts</h2>
       {posts.length > 0 ? (
