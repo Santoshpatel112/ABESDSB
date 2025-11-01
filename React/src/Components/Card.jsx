@@ -1,7 +1,7 @@
-import React from 'react'
 import './Card.css'
 
 const Card = () => {
+  // Card component for displaying animal info
   return (
     <div className="animal-card">
       <h1>Monkey</h1>
@@ -12,7 +12,7 @@ const Card = () => {
       <p style={{ marginTop: '1rem', color: '#555' }}>
         A curious and intelligent primate
       </p>
-      
+
     </div>
   );
 }
