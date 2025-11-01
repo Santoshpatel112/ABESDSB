@@ -1,4 +1,5 @@
 const Hero = () => {
+  // Hero section component
   return (
     <section
       style={{
@@ -15,7 +16,7 @@ const Hero = () => {
       <p style={{ fontSize: "1.2rem", color: "#555" }}>
         Discover the amazing world of animals
       </p>
-      
+
     </section>
   );
 };
