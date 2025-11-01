@@ -12,7 +12,8 @@ const Footer = () => {
         
       <div style={{ marginBottom: "1rem" }}>
         <p style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
-          Wildlife Gallery
+          Wildlife 
+          Gallery
         </p>
         <p style={{ fontSize: "0.9rem", color: "#ccc" }}>
           Explore the beauty of wildlife
