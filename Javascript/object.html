@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Objects</title>
+  </head>
+  <body>
+    <h1>JavaScript Object Demo</h1>
     <p id="adi"></p>
     <p id="adi2"></p>
-</body>
-<script>
-    
-    const person={
-        firstname:"akash",
-        lastname:"kumar",
-        age:22,
-        city:"patna"
+  </body>
+  <script>
+    const person = {
+      firstname: "akash",
+      lastname: "kumar",
+      age: 22,
+      city: "patna",
     };
-    document.getElementById("adi").innerHTML=person.firstname;
-    const person1=new Object({
-        firstname:"akash",
-        lastname:"kumar",
-        age:22,
-        city:"patna"
+    document.getElementById("adi").innerHTML = person.firstname;
+    const person1 = new Object({
+      firstname: "akash",
+      lastname: "kumar",
+      age: 22,
+      city: "patna",
     });
-    document.getElementById("adi2").innerHTML=person1.firstname;
-</script>
+    document.getElementById("adi2").innerHTML = person1.firstname;
+  </script>
 </html>
