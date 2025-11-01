@@ -12,6 +12,7 @@ const Card = () => {
       <p style={{ marginTop: '1rem', color: '#555' }}>
         A curious and intelligent primate
       </p>
+      
     </div>
   );
 }
